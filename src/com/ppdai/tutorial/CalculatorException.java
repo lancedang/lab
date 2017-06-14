@@ -15,10 +15,12 @@ public class CalculatorException extends Exception {
 	private boolean quit;
 
 	public CalculatorException(String message) {
+		super(message);
 		this.quit = false;
 	}
 
 	public CalculatorException(String message, boolean quit) {
+		super(message);
 		this.quit = quit;
 	}
 
